@@ -1,0 +1,1 @@
+int play(int N);

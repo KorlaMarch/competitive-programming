@@ -8,7 +8,7 @@ int max(int a, int b){
 }
 
 int main(){
-    scanf("%d %d", &n, &k);
+     scanf("%d %d", &n, &k);
     for(i = 0; i < n; i++){
         scanf("%d", &hap[i]);
         if(i) hap[i] += hap[i-1];

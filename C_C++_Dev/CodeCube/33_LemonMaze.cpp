@@ -18,7 +18,7 @@ node t;
 std::queue<node> qu;
 
 void fb(int in, int i, int j, int dx, int dy){
-    for(;i<n&&j<m&&i>=0&&j>=0&&mz[i][j]=='.';i+=dx,j+=dy){
+    for(i+=dx,j+=dy;i<n&&j<m&&i>=0&&j>=0&&mz[i][j]=='.';i+=dx,j+=dy){
         block[in][i][j] = 1;
     }
 }
@@ -40,19 +40,19 @@ int main(){
             }else if(mz[i][j] != 'E' && mz[i][j] != '.'){
                 switch(mz[i][j]){
                 case '|': c = 0; break;
-                case '/': c = 1; break;
+                case '\\': c = 1; break;
                 case '-': c = 2; break;
-                case '\\': c = 3; break;
+                case '/': c = 3; break;
                 }
                 block[0][i][j] = block[1][i][j] = block[2][i][j] = block[3][i][j] = 1;
-                fb(c,i-1,j,-1,0);
-                fb(c,i+1,j,1,0);
-                fb((c+1)%4,i-1,j+1,-1,1);
-                fb((c+1)%4,i+1,j-1,1,-1);
-                fb((c+2)%4,i,j+1,0,1);
-                fb((c+2)%4,i,j-1,0,-1);
-                fb((c+3)%4,i-1,j-1,-1,-1);
-                fb((c+3)%4,i+1,j+1,1,1);
+                fb(c,i,j,-1,0);
+                fb(c,i,j,1,0);
+                fb((c+1)%4,i,j,-1,1);
+                fb((c+1)%4,i,j,1,-1);
+                fb((c+2)%4,i,j,0,1);
+                fb((c+2)%4,i,j,0,-1);
+                fb((c+3)%4,i,j,-1,-1);
+                fb((c+3)%4,i,j,1,1);
             }
         }
     }

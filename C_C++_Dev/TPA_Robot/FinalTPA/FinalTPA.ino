@@ -23,8 +23,8 @@ int sonar2(){
 
 void turnR90EN(){
   resetEnc2();
-  SR(80);
-  while(encoder(2)<52);
+  SR(70);
+  while(encoder(2)<45);
   SL(100);
   delay(50);
   AO();
@@ -32,7 +32,7 @@ void turnR90EN(){
 
 void turnL90EN(){
   resetEnc3();
-  SL(80);
+  SL(70);
   while(encoder(3)<52);
   SR(100);
   delay(50);
@@ -40,15 +40,16 @@ void turnL90EN(){
 }
 void matrix(){
   turnL90EN();
-  FD(80);
-  delay(200);
+  FD(80); delay(200);
+  BK(100); delay(80); AO();
   turnR90EN();
-  FD(80);
-  delay(500);
+  delay(100);
+  FD(80); delay(500);
+  BK(100); delay(80); AO();
   turnR90EN();
-  FD(80);
-  delay(200);
-  AO(); 
+  delay(100);
+  FD(80); delay(200);
+  BK(100); delay(80); AO();
 }
 void bridge(){
   char s1,s2,s3,s4,i=0,ls,j=0;
@@ -126,22 +127,27 @@ void tack(){
 
 void track2(){
  int r,l;
- FD(80);
- delay(300);
+ unsigned long t = 0;
  turnL90EN();
- FD(80);
+ FD(70);
  delay(300);
- while(sonar2()>10){
+ while(!t||millis()-t<150){
     l = analog(4),r = analog(5);
+    if(!t&&r<10){
+      t = millis();
+      break;
+    }
     if(l<r){
-      FD2(20,70);
+      FD2(30,70);
     }else if(l>r){
-      FD2(70,20);
+      FD2(70,30);
     }else{
-      FD(50); 
+      FD(60); 
     }
   }
   turnR90EN();
+  FD(80);
+  delay(300);
   AO();
 }
 
@@ -150,23 +156,16 @@ void setup()
   sw_OK_press();
   //servo(1,60);
   //tack();
-  track2();
+  //track2();
   //bridge();
-  //matrix();
+  matrix();
+  //SL(90);
 }
 
 
 void loop()
 {
-  /*if(in(18)==0){
-    if(i){
-      servo(1,60);
-      i = 0;
-    }else{
-      servo(1,90);
-      i = 1;
-    }
-    delay(1000);
-  }*/
+  /*glcd(0,0,"%d    ",knob(70));
+  if(sw_OK()) turnL90EN();*/
   //SL(60);
 }

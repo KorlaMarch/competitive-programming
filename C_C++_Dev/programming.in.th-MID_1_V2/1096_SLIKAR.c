@@ -1,45 +1,51 @@
 #include "stdio.h"
-int n,i;
-char pic[512][513];
-
-int getBC(int x, int y, int n1, int n2){
-    int i,j,c;
-    for(i=x,c=0; i < n1; i++){
-        for(j = y; j < n2; j++){
-            if(pic[i][j]=='1') c++;
-        }
-    }
-    return c;
+int n,i,j,k,x,y,mn,dif;
+char s[512][512];
+int minDif[512][512],qs[512][512];
+int getQS(int x1, int y1, int x2, int y2){
+    if(x1&&y1) return qs[x2][y2]-qs[x1-1][y2]-qs[x2][y1-1]+qs[x1-1][y1-1];
+    else if(x1) return qs[x2][y2]-qs[x1-1][y2];
+    else if(y1) return qs[x2][y2]-qs[x2][y1-1];
+    else return qs[x2][y2];
 }
+int getDif(int x1, int y1, int x2, int y2, int r){
+    if(r==x) return getQS(x1,y1,x2,y2);
+    else if(r==y) return k*k/4-getQS(x1,y1,x2,y2);
+    else return minDif[x1][y1];
 
-int paint(int x, int y, int n){
-    int max,min,maxP,minP,c,i,j,n2=n/2;
-    if(n<=1) return 0;
-    max=min=getBC(x,y,n2+x,n2+y);
-    maxP=minP=0;
-    c = getBC(x,n2+y,n2+x,n+y);
-    if(c>max) max = c,maxP = 1;
-    if(c<min) min = c,minP = 1;
-    c = getBC(n2+x,y,n+x,n2+y);
-    if(c>max) max = c,maxP = 2;
-    if(c<min) min = c,minP = 2;
-    c = getBC(n2+x,n2+y,n+x,n+y);
-    if(c>max) max = c,maxP = 3;
-    if(c<min) min = c,minP = 3;
-    if(minP==maxP) minP=1;
-    c = n2*n2-max+min;
-    printf("n:%d X:%d Y:%d =%d %d %d %d = %d\n",n,x,y,max,maxP,min,minP,c);
-    if(maxP!=0&&minP!=0) c += paint(x,y,n/2);
-    if(maxP!=1&&minP!=1) c += paint(x,n2+y,n/2);
-    if(maxP!=2&&minP!=2) c += paint(n2+x,y,n/2);
-    if(maxP!=3&&minP!=3) c += paint(n2+x,n2+y,n/2);
-    return c;
 }
-
 int main(){
     scanf("%d",&n);
     for(i = 0; i < n; i++){
-        scanf(" %s", pic[i]);
+        scanf(" %s",s[i]);
     }
-    printf("%d\n", paint(0,0,n));
+    for(i = 0; i < n; i++){
+        for(j = 0; j < n; j++){
+            if(i&&j) qs[i][j] = (s[i][j]-'0')+qs[i-1][j]+qs[i][j-1]-qs[i-1][j-1];
+            else if(i) qs[i][j] = (s[i][j]-'0')+qs[i-1][j];
+            else if(j) qs[i][j] = (s[i][j]-'0')+qs[i][j-1];
+            else qs[i][j] = (s[i][j]-'0');
+        }
+    }
+    for(k = 2; k <= n; k *= 2){
+        for(i = 0; i < n; i += k){
+            for(j = 0; j < n; j += k){
+                mn = 300000;
+                //x==white  y==black
+                for(x = 0; x < 4; x++){
+                    for(y = 0; y < 4; y++){
+                        if(x!=y){
+                            dif  = getDif(i     ,j      ,i+k/2-1    ,j+k/2-1    ,0);
+                            dif += getDif(i     ,j+k/2  ,i+k/2-1    ,j+k-1      ,1);
+                            dif += getDif(i+k/2 ,j      ,i+k-1      ,j+k/2-1    ,2);
+                            dif += getDif(i+k/2 ,j+k/2  ,i+k-1      ,j+k-1      ,3);
+                            if(dif<mn) mn = dif;
+                        }
+                    }
+                }
+                minDif[i][j] = mn;
+            }
+        }
+    }
+    printf("%d\n",minDif[0][0]);
 }

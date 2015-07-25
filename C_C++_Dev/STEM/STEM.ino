@@ -3,17 +3,27 @@
 #define REF 600
 
 void fw2(int a, int b){
- motor(1,a);
+ motor(1,a-4);
+ motor(2,b); 
+}
+void bw2(int a, int b){
+ motor(1,a+4);
  motor(2,b); 
 }
 void turnR90(){
-  /*fw2(70,70);
-  delay(10);*/
   fw2(60,-60);
   delay(150);
   while(analog(3)>=REF);
-  fw2(-100,100);
-  delay(50);
+  fw2(-96,100);
+  delay(75);
+  motor_stop(ALL);
+}
+void turnL90(){
+  fw2(-60,60);
+  delay(150);
+  while(analog(2)>=REF);
+  fw2(100,-100);
+  delay(75);
   motor_stop(ALL);
 }
 int i;
@@ -41,6 +51,33 @@ void track(){
       }
   }
 }
+void trackCanR(){
+  while(analog(4)>=REF) track();
+  turnR90();
+  while(analog(1)>=REF&&analog(4)>=REF) track();
+  fw2(55,55);
+  delay(500);
+  bw2(-80,-80);
+  delay(770);
+  fw2(100,100);
+  delay(50);
+  motor_stop(ALL);
+  turnL90();
+}
+void trackCanL(){
+  while(analog(1)>=REF) track();
+  turnL90();
+  while(analog(1)>=REF&&analog(4)>=REF) track();
+  fw2(55,55);
+  delay(500);
+  bw2(-80,-80);
+  delay(770);
+  fw2(100,100);
+  delay(50);
+  motor_stop(ALL);
+  turnR90();
+}
+int co = 0;
 void setup(){
   OK();
 }
@@ -48,17 +85,8 @@ void setup(){
 
 void loop()
 {
-  while(analog(4)>=REF) track();
-  turnR90();
-  while(analog(1)>=REF&&analog(4)>=REF) track();
-  fw2(55,55);
-  delay(500);
-  fw2(-80,-80);
-  delay(600);
-  fw2(100,100);
-  delay(50);
+  fw2(70,70);
+  delay(2000);
   motor_stop(ALL);
   OK();
-  glcd(0,0,"%d %d    ",analog(1),analog(2));
-  glcd(1,0,"%d %d    ",analog(3),analog(4));
 }

@@ -1,50 +1,25 @@
 #include "stdio.h"
-#define HASH_SIZE 2000003
-typedef struct{
-    int k;
-    char v;
-}pair;
-pair hash_map[HASH_SIZE];
-
-void insert(int k, char v){
-    int i = k%HASH_SIZE,j = k%100003;
-    if(!j) j = 100003;
-    while(hash_map[i].v) i = (i+j)%HASH_SIZE;
-    hash_map[i].k = k;
-    hash_map[i].v = v;
-}
-
-char getV(int k){
-    int i = k%HASH_SIZE,j = k%100003;
-    while(hash_map[i].v){
-        if(hash_map[i].k==k) return hash_map[i].v;
-        i = (i+j)%HASH_SIZE;
-    }
-    return 0;
-}
-
-void genWeight(int sum, int d, int u, int m){
-    if(d>=20){
-        insert(sum,u);
-    }else{
-        genWeight(sum,d+1,u,m*3);
-        genWeight(sum+m,d+1,u+1,m*3);
-    }
-}
-
-int main(){
-    int n,i,j;
-    genWeight(0,0,1,1);
-    scanf("%d",&n);
-    for(i = 0; i < HASH_SIZE; i++){
-        printf("%d\n",i);
-        if(hash_map[i].v&&hash_map[i].k>=n){
-            printf("in:%d %d\n",hash_map[i].v,hash_map[i].k);
-            j = getV(hash_map[i].k-n);
-            if(j){
-                printf("%d %d\n",j+hash_map[i].v-2,hash_map[i].k);
-                break;
-            }
+int v[10] = {1,3,9,27,81,243,729,2187,6561,19683};
+char s[10];
+void findP(int d, int n){
+    int i;
+    if(n==10){
+        if(d==0){
+            for(i = 0; i < 10; i++) printf("%d ",-s[i]+1);
+            printf("\n");
         }
+        return;
+    }else{
+        for(i = -1; i <= 1; i++){
+            s[n] = i;
+            findP(d+v[n]*i,n+1);
+        }
+    }
+}
+int main(){
+    int i;
+    for(i = 9000; i < 10000; i++){
+        printf("i:%d :",i);
+        findP(i,0);
     }
 }

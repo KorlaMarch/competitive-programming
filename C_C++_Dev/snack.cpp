@@ -196,11 +196,6 @@ void update(){
 		}
 	}
 
-
-
-
-
-
 	//play scene
 	if(scene == 2 && inGame == 0){
 
@@ -269,19 +264,6 @@ void update(){
 
 	}
 
-
-
-
-
-	//hight score scene
-	if(scene == 3){
-
-	}
-
-
-
-
-
 	//about
 	if(scene == 4){
 		//clear screen
@@ -337,13 +319,6 @@ void update(){
 			buffer[43 + n2][8] = printtext[n2];
 		}
 
-
-
-		if(scene == 5){
-
-
-
-		}
 	}
 }
 
@@ -402,7 +377,8 @@ void moveSnack(snakeBody nextMove, int addNew){
 	snake = Tempsnack;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
+    system("mode 80, 25");
 	intGraphic();
 	drawMenu();
 	scene = 1;

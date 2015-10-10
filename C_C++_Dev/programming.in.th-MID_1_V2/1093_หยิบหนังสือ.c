@@ -1,32 +1,27 @@
 #include "stdio.h"
-int n,i,j,k;
-int book[2000];
-int t[2000][2000];
-int max(int a,int b){
+
+int max(int a, int b){
     return a>b?a:b;
+}
+
+int n,i,j;
+int books[2000];
+int sum[2000][2000];
+int bookV(int x){
+    return books[x-2] + books[x-1] - books[x];
 }
 int main(){
     scanf("%d",&n);
     for(i = 0; i < n; i++){
-        scanf("%d",&book[i]);
+        scanf("%d",books+i);
     }
-
-    for(i = n-1; i>=0; i--){
-        for(j = i; j < n; j++){
-            if(i+1<=j) t[i][j] = max(t[i][j], t[i+1][j]);
-            if(j>i) t[i][j] = max(t[i][j], t[i][j-1]);
-            if(i+3<=j) t[i][j] = max(t[i][j], t[i+3][j]+book[i]+book[i+1]-book[i+2]);
-            if(j-2>=i) t[i][j] = max(t[i][j], t[i][j-3]+book[j-2]+book[j-1]-book[j]);
-        }
+    for(i = 2; i < n; i++){
+        sum[i-2][i] = bookV(i);
     }
-    printf("%d\n       ",t[0][n-1]);
-    /*for(i = 0; i < n; i++) printf("%3d ", i);
-    printf("\n\n");
     for(i = 0; i < n; i++){
-        printf("I:%3d  ", i);
-        for(j = 0; j < n; j++){
-            printf("%3d ", t[i][j]);
+        for(j = i+3; j < n; j++){
+            sum[i][j] = max(bookV(i+2)+sum[i+3][j],max(bookV(j)+sum[i][j-3],max(sum[i+1][j],sum[i][j-1])));
         }
-        printf("\n");
-    }*/
+    }
+    printf("%d\n", sum[0][n-1]);
 }

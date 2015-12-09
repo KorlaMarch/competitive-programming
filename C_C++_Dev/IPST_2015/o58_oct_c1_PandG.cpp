@@ -29,7 +29,7 @@ pos tmp,s;
 pos gh[200];
 char mp[200][200];
 priority_queue<pos,vector<pos>,cmp2> qu;
-void enP(int x, int y,int t){
+void enP(int x, int y, int t){
     if(x>=0&&y>=0&&x<R&&y<C&&mp[x][y]=='.'){
         mp[x][y] = 'P';
         qu.push(getPos(x,y,t,'P'));
@@ -80,6 +80,8 @@ int main(){
                     enG(gh[pt].x,gh[pt].y,t);
                     pt++;
                 }
+                printf("t = %d\n", t);
+                printM();
                 if(t>=T) break;
             }
             if(tmp.ty=='P'){
@@ -97,8 +99,6 @@ int main(){
                 enG(tmp.x,tmp.y+1,tmp.t+1);
                 enG(tmp.x,tmp.y-1,tmp.t+1);
             }
-            //printf("t = %d\n", t);
-            //printM();
         }
         for(i = 0,isPW = 0; i < R && !isPW; i++){
             for(j = 0; j < C; j++){

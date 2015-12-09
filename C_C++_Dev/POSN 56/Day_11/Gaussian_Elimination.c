@@ -5,12 +5,9 @@ void RowOperation(double *a,int length, int from, int to, double mutiple){
     int x;
     printf("from = %d to = %d mutiple = %.2f\n", from + 1, to + 1, mutiple);
     for(x = 0; x < length; x++){
-
         *(a+length*to+x) -= *(a+length*from+x) * mutiple;
 
     }
-
-
 }
 
 int main(){

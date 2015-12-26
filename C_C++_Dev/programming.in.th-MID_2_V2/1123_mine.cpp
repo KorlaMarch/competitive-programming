@@ -1,47 +1,49 @@
 #include "stdio.h"
-#include "set"
-int n,k,i,j,x,mx,v;
-int ore[1001][1001],mv[1001][1001];
-int maxC[3][1001][1001];
-std::multiset<int> mxT;
 
-void calMaxC(int m){
-    mxT.clear();
+int n,k,maxV;
+int a[1005][1005];
+int mx[1005][1005];
+int sp[1005][1005];
+int max(int a, int b){
+    return a>b?a:b;
+}
+void solve(){
+    int i,j,x;
     for(i = 1; i <= n; i++){
         for(j = 1; j <= n; j++){
-            scanf("%d",&ore[i][j]);
-            ore[i][j] += ore[i-1][j]+ore[i][j-1]-ore[i-1][j-1];
+            scanf("%d",&a[i][j]);
+            a[i][j] += a[i-1][j]+a[i][j-1]-a[i-1][j-1];
         }
     }
-    for(i = 1; i+k-1 <= n; i++){
-        for(j = 1; j+k-1 <= n; j++){
-            mv[i][j] = ore[i+k-1][j+k-1]-ore[i+k-1][j-1]-ore[i-1][j+k-1]+ore[i-1][j-1];
+    for(i = k; i <= n; i++){
+        for(j = k; j <= n; j++){
+            sp[i][j] = a[i][j]-a[i-k][j]-a[i][j-k]+a[i-k][j-k];
         }
     }
-    for(i = 1; i <= k; i++){
-        for(j = 1; j <= k; j++){
-            mxT.insert(mv[i][j]);
+    for(x = 2; x < k; x *= 2){
+        for(i = k; i+x/2 <= n; i++){
+            for(j = k; j+x/2 <= n; j++){
+                sp[i][j] = max(max(sp[i][j],sp[i+x/2][j+x/2]),max(sp[i][j+x/2],sp[i+x/2][j]));
+            }
         }
     }
-    maxC[m][k][k] = *mxT.rbegin();
-    for(j = k; j+k-1 <= n; j++){
-        for(x = 1; x <= k; x++) mxT.erase(mv[x][j-k]);
-        for(x = 1; x <= k; x++) mxT.insert(mv[x][j]);
-        maxC[m][k][j] = *mxT.rbegin();
+    x /= 2;
+    for(i = k; i <= n-k+1; i++){
+        for(j = k;j <= n-k+1; j++){
+            mx[i][j] += max(max(sp[i][j],sp[i+k-x][j+k-x]),max(sp[i][j+k-x],sp[i+k-x][j]));
+        }
     }
-
 }
 
 int main(){
     scanf("%d%d",&n,&k);
-    calMaxC(0);
-    calMaxC(1);
-    calMaxC(2);
-    for(i = 0; i <= n; i++){
-        for(j = 0; j <= n; j++){
-            v = maxC[0][i][j]+maxC[1][i][j]+maxC[2][i][j];
-            if(v>mx) mx = v;
+    for(int t = 0; t < 3; t++){
+        solve();
+    }
+    for(int i = k; i <= n-k+1; i++){
+        for(int j = k; j <= n-k+1; j++){
+            if(mx[i][j]>maxV) maxV = mx[i][j];
         }
     }
-    printf("%d\n",mx);
+    printf("%d\n",maxV);
 }

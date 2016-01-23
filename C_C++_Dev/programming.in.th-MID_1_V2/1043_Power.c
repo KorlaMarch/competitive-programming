@@ -42,7 +42,7 @@ int main(){
                 g = gcd(g,c);
             }
         }
-        if(g<=1) printf("NO\n");
+        if(g<=1||y!=1) printf("NO\n");
         else printf("%d\n",g);
     }
 }

@@ -1,23 +1,25 @@
 #include "stdio.h"
 #include "algorithm"
-#include "queue"
-#include "vector"
 
-int n,i,j,l;
-long long t,a;
-std::priority_queue<long long,std::vector<long long>,std::greater<long long> > qu;
+int n,i;
+long long l[100005];
+long long t,rft;
+
 int main(){
     scanf("%d",&n);
     for(i = 0; i < n; i++){
-        scanf("%lld",&l);
-        qu.push(l);
+        scanf("%lld",&l[i]);
     }
-    while(!qu.empty()){
-        t++;
-        a = qu.top();
-        if(a<t) break;
-        qu.pop();
-        qu.push(a+1);
+    std::sort(l,l+n);
+    for(t=rft=0,i = 0; i < n; i++){
+        if((l[i]-t)*i-(l[i]-t)+1<=rft){
+            rft -= (l[i]-t)*i-(l[i]-t);
+            t = l[i];
+        }else{
+            break;
+        }
     }
-    printf("%d\n",t-1);
+    if(rft%(i-1)) t += rft/(i-1);
+    else if(rft) t += rft/(i-1)-1;
+    printf("%lld\n",t);
 }

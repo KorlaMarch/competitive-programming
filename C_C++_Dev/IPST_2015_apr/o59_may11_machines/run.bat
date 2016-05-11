@@ -1,0 +1,10 @@
+o59_may11_machines.exe < 1.in > machines1.out
+o59_may11_machines.exe < 2.in > machines2.out
+o59_may11_machines.exe < 3.in > machines3.out
+o59_may11_machines.exe < 4.in > machines4.out
+o59_may11_machines.exe < 5.in > machines5.out
+o59_may11_machines.exe < 6.in > machines6.out
+o59_may11_machines.exe < 7.in > machines7.out
+o59_may11_machines.exe < 8.in > machines8.out
+o59_may11_machines.exe < 9.in > machines9.out
+o59_may11_machines.exe < 10.in > machines10.out

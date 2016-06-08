@@ -90,7 +90,7 @@ int main(){
         m = (x+y)/2;
         checkM(m);
         if(std::max(subt[a],subt[b])<mxT) mxT = std::max(subt[a],subt[b]);
-        if(subt1[a]>subt[b]){
+        if(subt[a]>subt[b]){
             y = m-1;
         }else if(subt[a]<subt[b]){
             x = m+1;

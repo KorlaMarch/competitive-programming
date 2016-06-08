@@ -52,9 +52,9 @@ int hol_init()
     if(coins[i] == 'L')
       expected_result = 2;
   }
-  
+
   state = HOL_READINPUT;
-  
+
   return n;
 }
 
@@ -120,10 +120,9 @@ void hol_answer(int result)
     hol_die();
 
   state = HOL_ANSWERED;
-  
+
   if(result == expected_result)
     printf("Correct (%d)\n",wcounter);
   else
     printf("Incorrect (%d)\n",wcounter);
 }
-

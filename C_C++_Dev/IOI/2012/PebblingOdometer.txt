@@ -1,0 +1,10 @@
+#[SUBTASK 1]
+right
+pebble loop
+halt
+loop:
+get
+move
+right
+right
+pebble loop

@@ -1,17 +1,19 @@
 #include "stdio.h"
 
-int n,b,e,i,j;
-long long minC[1000005];
-int main(){
-    minC[0] = 0;
-    minC[1] = 0;
-    minC[2] = e;
-    minC[3] = e
-    scanf("%d%d%d",&n,&b,&e);
-    for(i = 2; i <= n; i++){
-        for(j = 1; j < n; j++){
+#define INF 1000000000005LL
 
+int n,b,e,i,j,k;
+long long minC[105][105];
+
+int main(){
+    scanf("%d%d%d",&n,&b,&e);
+    for(i = n-1; i >= 0; i--){
+        for(j = i+1; j < n; j++){
+            minC[i][j] = INF;
+            for(k = i+1; k < j; k++){
+                minC[i][j] = std::min(minC[i][j],e+std::max(b+minC[i][k-1],minC[k][j]));
+            }
         }
     }
-    printf("%lld\n",minC[n]);
+    printf()
 }

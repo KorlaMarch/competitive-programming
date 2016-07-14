@@ -1,5 +1,0 @@
-Part to #0 = {'F','F','F','L','F'};
-Part to #1 = {'F','F','F','L'};
-Part to #2 = {'F','F','F'};
-Part to #3 = {'F','F','F','R'};
-Part to #4 = {'F','F','F','R','F'};

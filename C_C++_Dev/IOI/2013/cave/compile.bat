@@ -1,1 +1,0 @@
-g++ -DEVAL -static -O2 -o cave grader.c cave.cpp

@@ -1,0 +1,36 @@
+#lang racket
+(define (mysum lst)
+  (if (null? lst)
+      0
+      (+ (first lst) (mysum (rest lst)))))
+(define (mylen lst)
+  (if (null? lst)
+      0
+      (+ 1 (mylen (rest lst)))))
+
+(define (myprod lst)
+  (if (null? lst)
+      1
+      (* (first lst) (myprod (rest lst)))))
+
+(define (unitlist lst)
+  (if (null? (rest lst))
+      #t
+      #f))
+(define (mypushback lst e)
+  (if (null? lst)
+      (cons e '())
+      (cons (first lst) (mypushback (rest lst) e))))
+(define (mylast lst)
+  (if (null? (rest lst))
+      (first lst)
+      (mylast (rest lst))))
+(define (myappend lstA lstB)
+  (if (and (null? lstB) (null? lasA))
+      '()
+      (if (null? lstA)
+         (cons (first lstB) (myappend lstA (rest lstB)))
+         (cons (first lstA) (myappend (rest lstA) lstB)))))
+  
+(define (myrev lst)
+  (

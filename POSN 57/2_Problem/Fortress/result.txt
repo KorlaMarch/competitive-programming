@@ -1,0 +1,82 @@
+Result: 
+ 
+TESTCASE 1: 
+Comparing files 1.sol and 1.OUT
+FC: no differences encountered
+
+TESTCASE 2: 
+Comparing files 2.sol and 2.OUT
+FC: no differences encountered
+
+TESTCASE 3: 
+Comparing files 3.sol and 3.OUT
+FC: no differences encountered
+
+TESTCASE 4: 
+Comparing files 4.sol and 4.OUT
+FC: no differences encountered
+
+TESTCASE 5: 
+Comparing files 5.sol and 5.OUT
+FC: no differences encountered
+
+TESTCASE 6: 
+Comparing files 6.sol and 6.OUT
+FC: no differences encountered
+
+TESTCASE 7: 
+Comparing files 7.sol and 7.OUT
+FC: no differences encountered
+
+TESTCASE 8: 
+Comparing files 8.sol and 8.OUT
+FC: no differences encountered
+
+TESTCASE 9: 
+Comparing files 9.sol and 9.OUT
+FC: no differences encountered
+
+TESTCASE 10: 
+Comparing files 10.sol and 10.OUT
+FC: no differences encountered
+
+TESTCASE 11: 
+Comparing files 11.sol and 11.OUT
+FC: no differences encountered
+
+TESTCASE 12: 
+Comparing files 12.sol and 12.OUT
+FC: no differences encountered
+
+TESTCASE 13: 
+Comparing files 13.sol and 13.OUT
+FC: no differences encountered
+
+TESTCASE 14: 
+Comparing files 14.sol and 14.OUT
+FC: no differences encountered
+
+TESTCASE 15: 
+Comparing files 15.sol and 15.OUT
+FC: no differences encountered
+
+TESTCASE 16: 
+Comparing files 16.sol and 16.OUT
+FC: no differences encountered
+
+TESTCASE 17: 
+Comparing files 17.sol and 17.OUT
+FC: no differences encountered
+
+TESTCASE 18: 
+Comparing files 18.sol and 18.OUT
+FC: no differences encountered
+
+TESTCASE 19: 
+Comparing files 19.sol and 19.OUT
+FC: no differences encountered
+
+TESTCASE 20: 
+Comparing files 20.sol and 20.OUT
+FC: no differences encountered
+

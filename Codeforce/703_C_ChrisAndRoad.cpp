@@ -2,11 +2,11 @@
 #include "algorithm"
 
 int n,w,v,u;
-long double miny;
+double miny;
 int minid;
 
-std::pair<long double,long double> end;
-std::pair<long double,long double> compo[10005];
+std::pair<double,double> end;
+std::pair<double,double> compo[10005];
 std::pair<int,int> po[10005];
 
 int main(){
@@ -15,12 +15,12 @@ int main(){
 		scanf("%d%d",&po[i].first,&po[i].second);
 		if(po[i].first<0) po[i].first = 0;
 	}
-	end.first = w/(long double)u;
+	end.first = w/(double)u;
 	end.second = w;
 
 	for(int i = 0; i < n; i++){
-		compo[i].first = po[i].first/(long double)v;
-		compo[i].second = (long double) po[i].second;
+		compo[i].first = po[i].first/(double)v;
+		compo[i].second = (double) po[i].second;
 	}
 	minid = -1;
 	bool err = false;
@@ -36,7 +36,7 @@ int main(){
 	}
 
 	if ( not err ) {
-		printf("%.10Lf\n",end.first);
+		printf("%.10f\n",end.first);
 		return 0;
 	}
 
@@ -48,6 +48,6 @@ int main(){
 			break;
 		}
 	}
-	printf("%.10Lf\n",compo[minid].first+(w-compo[minid].second)/u);
+	printf("%.10f\n",compo[minid].first+(w-compo[minid].second)/u);
 
 }

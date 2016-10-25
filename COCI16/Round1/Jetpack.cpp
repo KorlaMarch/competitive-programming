@@ -22,12 +22,12 @@ int main(){
 	for(int i = n-2; i >= 0; i--){
 		for(int j = 0; j < 10; j++){
 			if(s[j][i]=='.'){
-				if( (j==0||j+1==n) && from[j][i+1] != -1){
+				if( (j==0||j==9) && from[j][i+1] != -1){
 					from[j][i] = j;
+				}else if(j<9&&from[j+1][i+1]!=-1){
+					from[j][i] = j+1;
 				}else if(j>0&&from[j-1][i+1]!=-1){
 					from[j][i] = j-1;
-				}else if(j+1<n&&from[j+1][i+1]!=-1){
-					from[j][i] = j+1;
 				}else{
 					from[j][i] = -1;
 				}
@@ -40,7 +40,7 @@ int main(){
 	//find oper
 	int cr = 0, co = 0, st = 0;
 	for(int i = 0; i < n-1; i++){
-		if(from[cr][i]>cr || (cr==n-1&&from[cr][i]==cr)){
+		if(from[cr][i]>cr || (cr==9&&from[cr][i]==cr)){
 			//pass
 			if(co){
 				co++;
@@ -54,11 +54,11 @@ int main(){
 				co = 0;
 			}
 		}
-		cr = from[cr][i];
-		if(cr==-1){
-			printf("ERROR\n");
-			return 1;
+		if(from[cr][i]==-1){
+			printf("ERROR %d %d\n",i,cr);
+			return 0;
 		}
+		cr = from[cr][i];
 	}
 	
 	if(co){

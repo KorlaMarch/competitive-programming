@@ -3,10 +3,10 @@
 #include "algorithm"
 
 int n,mxS,ansPtr;
-std::pair<int,int> ord[101];
+int ord[101];
 char s[105][101];
 char ns[105][101];
-char ans[105];
+char ans[105],rans[105];
 bool adjMat[300][300];
 char isV[300];
 bool nout[300];
@@ -19,6 +19,7 @@ void createAdj(int x, int y, int d){
 		isB = true;
 		for(int j = i+1; j <= y; j++){
 			if(ns[i][d] != ns[j][d] || !isB){
+				//printf("Edge : %c %c\n",ns[i][d]==0?'0':ns[i][d],ns[j][d]==0?'0':ns[j][d]);
 				adjMat[ ns[i][d] ][ ns[j][d] ] = true;
 				isB = false;
 			}
@@ -32,7 +33,7 @@ void createAdj(int x, int y, int d){
 			st = i;
 		}
 	}
-	if(st != x){
+	if(ns[x][d]!='\0'||st != x){
 		createAdj(st,y,d+1);
 	}
 }
@@ -65,12 +66,10 @@ int main(){
 		mxS = std::max(mxS,(int)strlen(s[i]));
 	}
 	for(int i = 0; i < n; i++){
-		scanf("%d",&ord[i].first);
-		ord[i].second = i;
+		scanf("%d",&ord[i]);
 	}
-	std::sort(ord,ord+n);
 	for(int i = 1; i <= n; i++){
-		const int ind = ord[i-1].second;
+		const int ind = ord[i-1]-1;
 		for(int j = 0; s[ind][j] != '\0'; j++){
 			ns[i][j] = s[ind][j];
 		}
@@ -97,6 +96,11 @@ int main(){
 		}
 	}
 
-	ans[ansPtr] = '\0';
-	printf("DA\n%s\n",ans);
+	//post process
+	rans[ansPtr] = '\0';
+	for(int i = 0; i < ansPtr; i++){
+		rans[ans[i]-'a'] = i+'a';
+	}
+
+	printf("DA\n%s\n",rans);
 }

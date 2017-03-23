@@ -4,7 +4,6 @@
 int n,i,j,maxC,isEq;
 int s[10005];
 int sa[10005];
-int sa2[10005];
 
 bool cmp(int a, int b){
     int i;
@@ -24,7 +23,7 @@ int main(){
     isEq = true;
     for(i = 0; i < n; i++){
         scanf("%d",&s[i]);
-        sa[i] = sa2[i] = i;
+        sa[i] = i;
         if(i&&s[i]!=s[i-1]) isEq = false;
     }
     if(isEq) maxC = n;

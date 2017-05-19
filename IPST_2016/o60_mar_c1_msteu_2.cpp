@@ -33,9 +33,6 @@ long long distance(PII a, PII b){
 	return (a.first-b.first)*(long long)(a.first-b.first) + (a.second-b.second)*(long long)(a.second-b.second);
 }
 
-
-
-
 int main(){
 	scanf("%d",&n);
 	for(int i = 0; i < n; i++){

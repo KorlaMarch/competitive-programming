@@ -1,0 +1,42 @@
+Result: 
+ 
+TESTCASE 1: 
+Comparing files ski.1.out and 1.OUT
+FC: no differences encountered
+
+TESTCASE 2: 
+Comparing files ski.2.out and 2.OUT
+FC: no differences encountered
+
+TESTCASE 3: 
+Comparing files ski.3.out and 3.OUT
+FC: no differences encountered
+
+TESTCASE 4: 
+Comparing files ski.4.out and 4.OUT
+FC: no differences encountered
+
+TESTCASE 5: 
+Comparing files ski.5.out and 5.OUT
+FC: no differences encountered
+
+TESTCASE 6: 
+Comparing files ski.6.out and 6.OUT
+FC: no differences encountered
+
+TESTCASE 7: 
+Comparing files ski.7.out and 7.OUT
+FC: no differences encountered
+
+TESTCASE 8: 
+Comparing files ski.8.out and 8.OUT
+FC: no differences encountered
+
+TESTCASE 9: 
+Comparing files ski.9.out and 9.OUT
+FC: no differences encountered
+
+TESTCASE 10: 
+Comparing files ski.10.out and 10.OUT
+FC: no differences encountered
+

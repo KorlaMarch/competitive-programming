@@ -1,0 +1,538 @@
+Initialize: Enter a value n
+N = 555
+isWin : yes
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 0, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 1, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 2, the current size of the pot: 1
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 2, the current size of the pot: 2
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 2, the current size of the pot: 4
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 2, the current size of the pot: 12
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 2, the current size of the pot: 36
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 38, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 39, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 40, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 40, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 42, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 42, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 45, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 46, the current size of the pot: 1
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 46, the current size of the pot: 3
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 46, the current size of the pot: 6
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 46, the current size of the pot: 18
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 46, the current size of the pot: 54
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 46, the current size of the pot: 108
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 154, the current size of the pot: 1
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 154, the current size of the pot: 2
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 154, the current size of the pot: 4
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 158, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 158, the current size of the pot: 3
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 158, the current size of the pot: 9
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 167, the current size of the pot: 1
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 167, the current size of the pot: 2
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 167, the current size of the pot: 4
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 167, the current size of the pot: 12
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 167, the current size of the pot: 36
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 167, the current size of the pot: 72
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 239, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 240, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 240, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 242, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 242, the current size of the pot: 3
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 242, the current size of the pot: 6
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 248, the current size of the pot: 1
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 248, the current size of the pot: 3
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 248, the current size of the pot: 6
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 254, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 254, the current size of the pot: 3
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 254, the current size of the pot: 6
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 260, the current size of the pot: 1
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 260, the current size of the pot: 2
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 260, the current size of the pot: 4
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 260, the current size of the pot: 8
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 260, the current size of the pot: 24
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 284, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 285, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 286, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 286, the current size of the pot: 2
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 286, the current size of the pot: 6
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 286, the current size of the pot: 18
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 286, the current size of the pot: 54
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 340, the current size of the pot: 1
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 340, the current size of the pot: 3
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 340, the current size of the pot: 6
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 346, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 346, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 349, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 350, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 351, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 351, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 353, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 353, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 356, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 357, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 358, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 358, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 360, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 360, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 363, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 364, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 365, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 365, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 367, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 367, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 370, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 371, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 372, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 372, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 374, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 374, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 377, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 378, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 379, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 379, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 381, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 381, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 384, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 385, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 386, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 386, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 388, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 388, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 391, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 392, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 393, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 393, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 395, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 395, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 398, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 399, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 400, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 400, the current size of the pot: 2
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 402, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 402, the current size of the pot: 3
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 405, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 406, the current size of the pot: 1
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 406, the current size of the pot: 2
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 406, the current size of the pot: 4
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 406, the current size of the pot: 8
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 406, the current size of the pot: 24
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 430, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 431, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 432, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 432, the current size of the pot: 2
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 432, the current size of the pot: 4
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 432, the current size of the pot: 12
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 444, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 445, the current size of the pot: 1
+Alojzy pass
+Bajtazara move
+The number of pebbles on the stack: 446, the current size of the pot: 1
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 446, the current size of the pot: 2
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 446, the current size of the pot: 4
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 446, the current size of the pot: 12
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 446, the current size of the pot: 24
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar pass
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 470, the current size of the pot: 1
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 470, the current size of the pot: 3
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar double
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 470, the current size of the pot: 6
+Alojzy triple
+Bajtazara move
+The number of pebbles on the stack: 470, the current size of the pot: 18
+What move should perform Byteasar? 1: Pass, 2: Double , 3: Triple ?
+Byteasar triple
+Current Winning State : yes
+Aloysius move
+The number of pebbles on the stack: 470, the current size of the pot: 54
+Alojzy double
+Bajtazara move
+The number of pebbles on the stack: 470, the current size of the pot: 108
+Bajtazar loss, Alojzy win :)

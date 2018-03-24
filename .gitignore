@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# Input / Output files
+
+*.in
+*.out
+Hackercup/*.txt

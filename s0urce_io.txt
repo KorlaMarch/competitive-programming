@@ -1,0 +1,38 @@
+look = [];
+look['0'] = 'sendintelpass';
+look['1'] = 'hostnewserver';
+look['2'] = 'createfilethread';
+look['3'] = 'uploaduserstats';
+look['4'] = 'dodecahedron';
+look['5'] = 'respondertimeout';
+look['6'] = 'joinnetworkclient';
+look['7'] = 'removenewcookie';
+look['8'] = 'exportconfigpackage';
+look['9'] = 'systemportkey';
+look['10'] = 'encodenewfolder';
+look['11'] = 'encryptunpackedbatch';
+look['12'] = 'deleteallids';
+look['13'] = 'loadaltevent';
+look['14'] = 'includedirectory';
+
+look = ["sendintelpass", "hostnewserver", "createfilethread", "uploaduserstats", "dodecahedron", "respondertimeout", "joinnetworkclient", "removenewcookie", "exportconfigpackage", "systemportkey", "encodenewfolder", "encryptunpackedbatch", "deleteallids", "loadaltevent", "includedirectory", "decryptdatabatch", "create3axisvector", "loadregisterlist", "systemgridtype", "disconnectchannel", "mergesocket", "wordcounter", "patcheventlog", "changepassword", "createnewpackage", "createnewsocket", "create2axisvector", "setnewproxy", "eventlistdir", "callmodule", "generatecodepack", "statusofprocess", "destroybatch", "ghostfilesystem", "httpbuffersize", "fileexpresslog", "getxmlprotocol", "loadloggedpassword", "rootcookieset", "emitconfiglist", "blockthreat", "unpacktmpfile", "batchallfiles", "channelsetpackage", "bufferpingset", "getpartoffile", "tempdatapass", "sizeofhexagon", "changeusername", "getfirewallchannel", "disconnectserver", "removeoldcookie", "getmysqldomain", "getdatapassword", "checkhttptype"];
+
+/* $('#tool-type-word').on('keydown',function search(e) {
+    if(e.keyCode == 13) {
+		var imgurl = $('.tool-type-img')[0].src.split('/')[7];
+		var val = $('#tool-type-word')[0].value;
+		console.log(imgurl + ' ' + val);
+		look[imgurl] = val;
+    }
+}); */
+
+function update(){
+	var imgurl = $('.tool-type-img')[0].src.split('/')[7];
+	var prefix = $('.tool-type-img')[0].src.split('/')[6]
+	var val = $('#tool-type-word')[0].value;
+	if(prefix=='h'&&look[imgurl]){
+		$('#tool-type-word')[0].value = look[imgurl];
+	}
+}
+
+timer = setInterval(update, 100);
